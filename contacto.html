@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PixelNorte | Contacto</title>
+    <link rel="stylesheet" type="" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Contacto</h1>
+    <form id="formulario-contacto" action="contacto.php" method="post">
+        <label for="nombre" class="campo-ancho">Ingrese su nombre:</label>
+        <input type="text" name="nombre" value="" placeholder="Juan Perez" required class="campo-ancho">
+        <label for="mail" class="campo-ancho">Ingrese su correo:</label>
+        <input type="email" name="mail" value="" placeholder="juan@mail.com" required class="campo-ancho">
+        <label for="nacimiento" class="campo-ancho">Ingrese su fecha de nacimiento:</label>
+        <input type="date" name="nacimiento" value="" required class="campo-ancho">
+        <!-- multiple -->
+        <h4>Que te interesa?</h4>
+        <input type="checkbox" name="int" value="diseno">
+        Diseño
+        <input type="checkbox" name="int" value="desa">
+        Desarrollo
+        <input type="checkbox" name="int" value="infra">
+        Infra
+
+        <!-- una sola -->
+        <h4>Que plan queres?</h4>
+        <input type="radio" name="plan" value="basico">
+        Plan básico
+        <input type="radio" name="plan" value="avanzado">
+        Plan básico
+        <input type="radio" name="plan" value="full">
+        Plan básico
+        <hr>
+        <select name="servicio">
+            <option value="sitio">
+                Sitio web
+            </option>
+            <option value="hosting">
+                Hosting
+            </option>
+        </select>
+        <label for="mensaje">Dejanos tu mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="12" cols="55"></textarea>
+        <input class="btn" type="submit" value="Enviar">
+    </form>
+    <hr>
+</body>
+
+</html>
