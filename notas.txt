@@ -1,1 +1,0 @@
-Más adelante en la app quiero agregar un boton para que envie una notificacion
