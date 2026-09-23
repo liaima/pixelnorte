@@ -1,0 +1,178 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#img-logo {
+    max-width: 50%;
+    height: auto;
+}
+
+#index-title {
+    color: blue;
+}
+
+.header1 {
+    color: orange;
+    background-color: aquamarine;
+
+}
+
+#title-servicios-destacados {
+    color: #6b2233;
+}
+
+.subtitle {
+    color: #22396b;
+}
+
+/* TABLAS */
+/*
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+*/
+
+#tabla-servicios {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-servicios th,
+#tabla-servicios td {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+#tabla-servicios th {
+    background-color: #1E3A5F;
+    color: white;
+}
+
+/* FORMULARIOS */
+
+#formulario-contacto {
+    width: 60%;
+    padding: 15px;
+}
+
+#formulario-contacto label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+#formulario-contacto .btn {
+    background-color: mediumseagreen;
+    font-weight: bold;
+    transition: background 2s;
+}
+
+#formulario-contacto .btn:hover {
+    background-color: green;
+}
+
+
+#formulario-contacto {
+    display: block;
+}
+
+@media (min-width: 700px) {
+    #formulario-contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    #formulario-contacto .campo-ancho {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* FLEX BOX Y GRID */
+
+
+/* TARJETAS */
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tarjeta {
+    flex: 1 1 250px;
+    padding: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* NAVBAR */
+#nav-principal {
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    color: white;
+}
+
+#nav-principal a {
+    padding: 15px;
+    text-decoration: none;
+    color: white
+}
+
+#nav-principal a:hover {
+    background-color: red;
+}
+
+/* Base: sin media query — aplica siempre */
+#nav-principal {
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* A partir de 700px */
+@media (min-width: 700px) {
+    #nav-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    #nav-principal {
+        justify-content: space-around;
+    }
+}
