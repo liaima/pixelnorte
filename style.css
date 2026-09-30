@@ -1,6 +1,6 @@
 body {
     background-color: #494949;
-    color: antiquewhite;
+    color: white;
 }
 
 ul {
@@ -27,7 +27,7 @@ h1 {
 }
 
 #index-title {
-    color: red;
+    color: orangered;
 }
 
 .header1 {
