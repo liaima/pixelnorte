@@ -1,3 +1,8 @@
+body {
+    background-color: #494949;
+    color: antiquewhite;
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +41,7 @@ h1 {
 }
 
 .subtitle {
-    color: #22396b;
+    color: #a71c1c;
 }
 
 /* TABLAS */
