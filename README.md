@@ -5,4 +5,4 @@ trabajo practico de LFS I.
 - HTML5
 - CSS3 (Flexbox, Grid)
 ## Autor
-Nombre Apellido - **IPAP**
+Manuel Lopez Jove - **IPAP**
